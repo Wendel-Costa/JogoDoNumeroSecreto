@@ -11,7 +11,7 @@ let numeroSecreto = gerarNumero();
 let tentativas = 1;
 let rodadas = 1;
 function exibirTotal(){
-    exibirTexto('h1',`Jogo do número secreto | ${rodadas}ª rodada`);
+    exibirTexto('h1',`Jogo do número secreto);
     exibirTexto('p','Escolha um número entre 1 e 10');
 }
 
@@ -49,8 +49,7 @@ function verificarChute(){
     
     if (chute == numeroSecreto){
         exibirTexto('h1','Acertou!');
-        let palavratentativa = tentativas == 1? 'tentativa':'tentativas';
-        exibirTexto('p',`Você descobriu o número secreto com ${tentativas} ${palavratentativa}!`);
+        exibirTexto('p',`Você descobriu o número secreto na ${tentativas}ª tentativa`);
         document.getElementById('reiniciar').removeAttribute('disabled');
 
     } else {
