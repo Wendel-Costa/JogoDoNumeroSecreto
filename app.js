@@ -11,7 +11,7 @@ let numeroSecreto = gerarNumero();
 let tentativas = 1;
 let rodadas = 1;
 function exibirTotal(){
-    exibirTexto('h1',`Jogo do número secreto);
+    exibirTexto('h1',`Jogo do número secreto`);
     exibirTexto('p','Escolha um número entre 1 e 10');
 }
 
